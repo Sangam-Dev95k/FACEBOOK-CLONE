@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROFILE-PAGE-SOCIALBOOK</title>
+    <link rel="stylesheet" href="STYLE.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav>
+        <div class="nav-left">
+            <a href="INDEX.HTML">
+                <img src="IMAGE/logo.png" class="logo">
+            </a>
+            <ul>
+                <li><img src="IMAGE/notification.png" alt=""></li>
+                <li><img src="IMAGE/inbox.png" alt=""></li>
+                <li><img src="IMAGE/video.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="IMAGE/search.png">
+                <input type="text" placeholder="search">
+            </div>
+            <div class="user-icon online" onclick="SETTINGMENUToggle()">
+                <img src="IMAGE/PROFILE-PICTURE.jpg">
+            </div>
+        </div>
+        <!--SETTINGS MENU-->
+        <DIV class="SETTING-MENU">
+            <DIV id="dark-btn">
+                <span></span>
+            </DIV>
+            <DIV class="SETTING-MENU-INNER">
+                <!--first profile-->
+                <div class="user-profile">
+                    <img src="IMAGE/PROFILE-PICTURE.jpg">
+                    <div>
+                        <p>Sangam Yadav</p>
+                        <a href="PROFILE.HTML">see your profile</a>
+                    </div>
+                </div>
+                <HR>
+                <!--second profile-->
+                <div class="user-profile">
+                    <img src="IMAGE/feedback.png">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve the new design</a>
+                    </div>
+                </div>
+                <HR>
+                    <!--inner profile links 1-->
+                    <DIV class="SETTINGS-LINKS">
+                        <img src="IMAGE/setting.png" class="SETTINGS-ICON">
+                        <a href="#">Privacy & setting <img src="IMAGE/arrow.png" width="10px"></a>
+                    </DIV>
+                     <!--inner profile links 2-->
+                    <DIV class="SETTINGS-LINKS">
+                        <img src="IMAGE/help.png" class="SETTINGS-ICON">
+                        <a href="#">Helps & supports<img src="IMAGE/arrow.png" width="10px"></a>
+                    </DIV>
+                    <!--inner profile links 3-->
+                    <DIV class="SETTINGS-LINKS">
+                        <img src="IMAGE/display.png" class="SETTINGS-ICON">
+                        <a href="#">Display & Accessibility<img src="IMAGE/arrow.png" width="10px"></a>
+                    </DIV>
+                    <!--inner profile links 4-->
+                    <DIV class="SETTINGS-LINKS">
+                        <img src="IMAGE/logout.png" class="SETTINGS-ICON">
+                        <a href="#">Logout<img src="IMAGE/arrow.png" width="10px"></a>
+                    </DIV> 
+            </DIV>
+        </DIV>
+    </nav>
+    <!--PROFILE PAGE-->
+    <DIV class="profile-container">
+        <img src="IMAGE/cover-picture.jpg" class="cover-img">
+        <div class="profile-details">
+            <div class="pd-left">
+                <div class="pd-rows">
+                    <img src="IMAGE/PROFILE-PICTURE.jpg" class="pd-image">
+                    <div>
+                        <h3>sangam yadav</h3>
+                        <p>5.2K followers . 500 following</p>
+                        <img src="IMAGE/MEMBER-01.jpg">
+                        <img src="IMAGE/MEMBER-02.jpg">
+                        <img src="IMAGE/MEMBER-03.jpg">
+                        <img src="IMAGE/MEMBER-04.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="pd-right">
+                <button type="button"><img src="IMAGE/add-friends.png">friend</button>
+                <button type="button"><img src="IMAGE/message.png">Message</button>
+                <br>
+                <a href="#"><img src="IMAGE/more.png"></a>
+            </div>
+        </div>
+        <div class="profile-info">
+            <div class="info-colum">
+                <div class="profile-intro">
+                    <h3>Bio</h3>
+                    <p class="intro-text">Believe in yourself and you can do unbelievable things...
+                        <img src="IMAGE/feeling.png">
+                    </p>
+                    <hr>
+                    <ul>
+                        <li class="edit"> <i class="fa-solid fa-circle-exclamation"></i><b>profile</b> . Public figure</li>
+                        <li><img src="IMAGE/profile-study.png"> Studied Bachelor in computer science and
+                           applications(Bca) at Sandip University
+                        </li>
+                        <li><img src="IMAGE/profile-study.png">Went to Zila school purnea, Bihar</li>
+                        <li><img src="IMAGE/profile-home.png">Lives in Madhubani, Bihar</li>
+                        <li><img src="IMAGE/profile-location.png">From Purnea, Bihar</li>
+                        <li class="edit"><i class="fa-brands fa-linkedin"></i><b>sangamyadavv</b></li>
+                    </ul>
+                </div>
+                <div class="profile-intro">
+                    <div class="tittle-box">
+                        <h3>photos</h3>
+                        <a href="">All photos</a>
+                    </div>
+                    <div class="photo-box">
+                      <div> <img src="IMAGE/photo01.jpg"></div>
+                       <div><img src="IMAGE/photo02.jpg"></div>
+                       <div><img src="IMAGE/photo03.jpg"></div>
+                       <div><img src="IMAGE/photo04.jpg"></div>
+                       <div><img src="IMAGE/photo05.jpg"></div>
+                       <div><img src="IMAGE/photo06.jpg"></div> 
+                    </div>
+                </div>
+                <!-- friends -->
+                <div class="profile-intro">
+                    <div class="tittle-box">
+                        <h3>Friends</h3>
+                        <a href="">All Friends</a>
+                    </div>
+                    <p>2000 (10 Mutual)</p>
+                    <div class="Friends-box">
+                       <div><img src="IMAGE/MEMBER-01.jpg"><p>Rider 220f</p></div>
+                       <div><img src="IMAGE/MEMBER-02.jpg"><p>saurabh yadav</p></div>
+                       <div><img src="IMAGE/MEMBER-03.jpg"><p>Vikash Ranjan</p></div>
+                       <div> <img src="IMAGE/MEMBER-04.jpg"><p>Azad kumar</p></div>
+                       <div><img src="IMAGE/member-5.png"><p>Anthony E</p></div>
+                       <div> <img src="IMAGE/member-6.png"><p>Michael A</p></div> 
+                       <div><img src="IMAGE/member-7.png"><p>Edward M</p></div>
+                       <div> <img src="IMAGE/member-8.png"><p>Bradon C</p></div>
+                       <div><img src="IMAGE/member-9.png"><p>James Doe</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-colum">
+                <div class="write-post-container">
+                    <div class="user-profile">
+                        <img src="IMAGE/PROFILE-PICTURE.jpg">
+                        <div>
+                            <p>Sangam Yadav</p>
+                            <small>Public <i class="fa-solid fa-caret-down"></i></small>
+                        </div>
+                    </div>
+                    <div class="post-input-container">
+                        <textarea rows="3" placeholder="Write somethings here..."></textarea>
+                        <div class="add-post-link">
+                            <a href="#"><img src="IMAGE/live-video.png">Live Mode</a>
+                            <a href="#"><img src="IMAGE/photo.png">Photo/Vedio</a>
+                            <a href="#"><img src="IMAGE/feeling.png">Feelings/Activity</a>
+                        </div>
+                    </div>
+                </div>
+                        <!--post 1-->
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="IMAGE/PROFILE-PICTURE.jpg">
+                            <div>
+                                <p>Sangam Yadav</p>
+                                <span>2 september 2023, 05:55 PM </span>
+                            </div>
+                        </div>
+                        <a href="#"> <i class="fa-solid fa-ellipsis-vertical"></i> </a>
+                    </div>
+                    <p class="post-text">Suscribe <span> @Easy Tutorials</span>
+                        YouTube Channel to Watch more Vedios on 
+                        Website Development and UI Designs.
+                        <a href="#">#EasyTutorials</a>
+                        <a href="#">#YouTube Channel</a>
+                    </p>
+                    <img src="IMAGE/feed-image-1.png" class="post-img">
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="IMAGE/like-blue.png">50K</div>
+                            <div><img src="IMAGE/comments.png">5K</div>
+                            <div><img src="IMAGE/share.png ">10K</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="IMAGE/PROFILE-PICTURE.jpg">
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <!--post 2-->
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="IMAGE/PROFILE-PICTURE.jpg">
+                            <div>
+                                <p>Sangam Yadav</p>
+                                <span>2 september 2023, 09:10 AM </span>
+                            </div>
+                        </div>
+                        <a href="#"> <i class="fa-solid fa-ellipsis-vertical"></i> </a>
+                    </div>
+                    <p class="post-text">Like and Share this vedio with friends, Tag <span> @Friends Vlogs</span>
+                        Facebook page on Your post. Ask your doubts in the comments.
+                        <a href="#">#Friens Vlogs</a>
+                        <a href="#">#YouTube Channel</a>
+                    </p>
+                    <img src="IMAGE/feed-image-2.png" class="post-img">
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="IMAGE/like-blue.png">8K</div>
+                            <div><img src="IMAGE/comments.png">1.1K</div>
+                            <div><img src="IMAGE/share.png ">3K</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="IMAGE/PROFILE-PICTURE.jpg">
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <!--post 3-->
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="IMAGE/PROFILE-PICTURE.jpg">
+                            <div>
+                                <p>Sangam Yadav</p>
+                                <span>28 August 2023, 02:40 PM </span>
+                            </div>
+                        </div>
+                        <a href="#"> <i class="fa-solid fa-ellipsis-vertical"></i> </a>
+                    </div>
+                    <p class="post-text">some times happy with friends. Tags your real friends
+                        <span> @Friends Zone</span>
+                        Vlogs on YouTube Channel to Watch more Vedios on .
+                        <a href="#">#Friends-Zone</a>
+                        <a href="#">#YouTube Channel</a>
+                    </p>
+                    <img src="IMAGE/feed-image-3.png" class="post-img">
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="IMAGE/like-blue.png">121k</div>
+                            <div><img src="IMAGE/comments.png">20K</div>
+                            <div><img src="IMAGE/share.png ">70K</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="IMAGE/PROFILE-PICTURE.jpg">
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <!--POST 4-->
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="IMAGE/PROFILE-PICTURE.jpg">
+                            <div>
+                                <p>Sangam Yadav</p>
+                                <span>21 August 2023, 08:25 PM </span>
+                            </div>
+                        </div>
+                        <a href="#"> <i class="fa-solid fa-ellipsis-vertical"></i> </a>
+                    </div>
+                    <p class="post-text"> Office Works in House. <span> @Apple</span>
+                    </p>
+                    <img src="IMAGE/feed-image-4.png" class="post-img">
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="IMAGE/like-blue.png">21M</div>
+                            <div><img src="IMAGE/comments.png">1.9M</div>
+                            <div><img src="IMAGE/share.png ">3.7M</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="IMAGE/PROFILE-PICTURE.jpg">
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <!--POST 5-->
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="IMAGE/PROFILE-PICTURE.jpg">
+                            <div>
+                                <p>Sangam Yadav</p>
+                                <span>2 August 2023, 10:00 AM </span>
+                            </div>
+                        </div>
+                        <a href="#"> <i class="fa-solid fa-ellipsis-vertical"></i> </a>
+                    </div>
+                    <p class="post-text">Office meet with Project members. <span> @Developers group</span>
+                        discuss our next project.
+                    </p>
+                    <img src="IMAGE/feed-image-5.png" class="post-img">
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="IMAGE/like-blue.png">4K</div>
+                            <div><img src="IMAGE/comments.png">1K</div>
+                            <div><img src="IMAGE/share.png ">1.2K</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="IMAGE/PROFILE-PICTURE.jpg">
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="load-more-btn">Load More</button>
+            </div>
+        </div>
+    </DIV>
+
+    <!--footer-->
+    <DIV class="FOOTER">
+        <P>COPYRIGHT 2020 - Easy Tutorials YouTube Channel</P>
+    </DIV>
+    <!--ADD JAVA SCRIPT FILE-->
+    <SCript src="SCRIPT.JS"></SCript>
+</body>
+</html>
